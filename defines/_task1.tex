@@ -1,0 +1,38 @@
+\def \equationFirst {{y}' \cdot \cos^{2}{x} = \sec{y} \cdot \ln{\sin{y}}}
+
+\def \equationSecond {{y}' \cdot \ln{x} + 2xy = 2x \cdot \sqrt{y}}
+
+\def \equationThird {{y}' - 1 = e^{x-y} \cdot (1 - e^{y})}
+
+\def \equationFourth { 
+	\big(2x - \cos{(x + y)} \big) \cdot {y}' + 2y 
+	= 2{x} + \cos{x + y}
+}
+
+\def \equationFifth {
+	x{y}' \cdot \big(\ln{(y\ctg{x})} + 1\big) = 
+	\dfrac{2xy}{\sin{2x}} - y \cdot \ln{(y\ctg{x})}
+}
+
+\newcommand{\taskOneSolutionItem}[4]{
+	% #1 - номер уравнения %
+	% #2 - уравнение %
+	% #3 - тип уравнения %
+	% #4 - ответ %
+	\item 
+	$ #2 $
+	
+	\textit{Тип уравнения}:
+	#3
+	
+	\textit{Векторное поле}:
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.5\textwidth]{img/dist/equation#1.pdf}
+		\caption{Уравнение #1}
+	\end{figure}
+	
+	\textit{Ответ}: $ \displaystyle #4,\ C \in \rational $
+	
+	\newpage
+}

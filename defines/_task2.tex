@@ -1,12 +1,12 @@
 % уравнение один
 \def \equationFirst {x{y}' \cdot \ln{x} - y = 3x^2 \cdot \ln^{2}{x}}
-\def \conditionFirst {y(\sqrt[3]{e}) = 0}
+\def \conditionFirst {y\paren{\sqrt[3]{e}} = 0}
 \newcommand{\solutionFirst}[1][C] {y = \dfrac{3x^2\ln{x}}{2} + #1\ln{x}}
 \def \constantFirst {\dfrac{3 e^{\frac{2}{3}}}{2}}
 
 % уравнение два
 \def \equationSecond {{y}' \cdot \ln{x} + 2xy = 2x \cdot \sqrt{y}}
-\def \conditionSecond {y(0) = 1}
+\def \conditionSecond {y\paren{0} = 1}
 \newcommand{\solutionSecond}[1][C] {\ln{\sqrt{y} - 1} = #1 - \Ei{2\ln{x}}}
 \def \constantSecond {-1}
 

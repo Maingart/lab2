@@ -5,30 +5,30 @@
 \def \equationThird {{y}' - 1 = e^{x-y} \cdot (1 - e^{y})}
 
 \def \equationFourth { 
-	\big(2x - \cos{(x + y)} \big) \cdot {y}' + 2y 
+	\paren{2x - \cos{(x + y)}} \cdot {y}' + 2y 
 	= 2{x} + \cos{(x + y)}
 }
 
 \def \equationFifth {
-	x{y}' \cdot \big(\ln{(y\ctg{x})} + 1\big) = 
+	x{y}' \cdot \paren{\ln{(y\ctg{x})} + 1} = 
 	\dfrac{2xy}{\sin{2x}} - y \cdot \ln{(y\ctg{x})}
 }
 
 \newcommand{\taskOneSolutionItem}[4] {
 	\item 
-		$ #2 $ 	% #2 - уравнение
+		$ #2 $ % #2 - уравнение
 	
 	\textit{Тип уравнения}:
-		#3 	% #3 - тип уравнения
+		#3 % #3 - тип уравнения
 	
 	\textit{Векторное поле}:
 	\begin{figure}[H]
 		\centering
 		\includegraphics[width=0.5\textwidth]{img/dist/equation#1.pdf}
-		\caption{Векторное поле уравнения #1} 	% #1 - номер уравнения
+		\caption{Векторное поле уравнения #1} % #1 - номер уравнения
 	\end{figure}
 	
-	\answer $ \displaystyle #4,\ C \in \rational $ 	% #4 - ответ
+	\answer $ \displaystyle #4,\ C \in \rational $ % #4 - ответ
 	
 	\newpage
 }

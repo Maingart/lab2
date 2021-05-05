@@ -1,43 +1,25 @@
+% уравнение один
 \def \equationFirst {x{y}' \cdot \ln{x} - y = 3x^2 \cdot \ln^{2}{x}}
-\def \conditionsFirst {y(\sqrt[3]{e}) = 0}
-\newcommand{\solutionFirst}[1][C]{
-	y = \dfrac{3x^2\ln{x}}{2} + #1\ln{x}
-}
+\def \conditionFirst {y(\sqrt[3]{e}) = 0}
+\newcommand{\solutionFirst}[1][C] {y = \dfrac{3x^2\ln{x}}{2} + #1\ln{x}}
 \def \constantFirst {\dfrac{3 e^{\frac{2}{3}}}{2}}
 
-
+% уравнение два
 \def \equationSecond {{y}' \cdot \ln{x} + 2xy = 2x \cdot \sqrt{y}}
-\def \conditionsSecond {y(0) = 1}
-\newcommand{\solutionSecond}[1][C]{
-	\ln{\sqrt{y} - 1} = #1 - \Ei{2\ln{x}}
-}
+\def \conditionSecond {y(0) = 1}
+\newcommand{\solutionSecond}[1][C] {\ln{\sqrt{y} - 1} = #1 - \Ei{2\ln{x}}}
 \def \constantSecond {-1}
 
-
-\newcommand{\customCases}[2]{
-	{$
-		\begin{cases}
-			#1, \\
-			#2
-		\end{cases}
-	$}
-}
-
 \newcommand{\taskTwoSolutionItem}[5]{
-	% #1 - уравнение %
-	% #2 - общее решение %
-	% #3 - условие %
-	% #4 - найденное С %
-	% #5 - ответ %
 	\item 
-	$ #1 $
+		$ #1 $ % #1 - уравнение
 	
 	\textit{Общее решение}: 
-	$ #2, \ {C} \in \rational $
+		$ #2, \ {C} \in \rational $ % #2 - общее решение
 	
-	$ \mbox{Подставим }#3 \ \mbox{в общее решение:} $
+	Подставим $ #3 $ в общее решение: % #3 - условие
 	
-	$ C = #4 $
+	$ C = #4 $ % #4 - найденное С
 	
-	\textit{Ответ}: $ \displaystyle #5 $
+	\answer $ \displaystyle #5 $ % #5 - ответ
 }

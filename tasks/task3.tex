@@ -1,17 +1,50 @@
-\def \equation {{y}' \cdot \big(1 - \sin{(2x + 2y)} \big) = 2\sqrt{y - y^{2}}}
-
-\def \conditionsOne {y(0) = 0}
-\def \conditionsTwo {y = \sin^{2}{(x + y)}}
+\input{defines/_task3.tex}
 
 \section{Задача 3.}
 \subsection{Постановка задачи}
 Проверить, является ли представленная неявная функция решением следующей задачи Коши:
-\begin{equation*}
-	\begin{cases}
-		\equation, \\
-		\conditionsOne, \\
-		\conditionsTwo \\
-	\end{cases}
-\end{equation*}
+\begin{itemize}[label={}]
+	\item
+		\customCases
+			{\equation}
+			{\condition}
+	\item
+		$ \function $
+\end{itemize}
 
 \subsection{Решение}
+
+\begin{itemize}[label={}]
+	\item
+		Проверим, удовлетворяет ли функция $ \function $ начальному условию $ \condition $:
+		
+		\subitem 
+			$ 0 = 0 $
+		
+		Функция $ \function $ должна удовлетворять исходному уравнению.
+		Вычислим $ y' $:
+		
+		\subitem 
+			$ {y}' = 2\sin{(x + y)}\cos{(x + y)}(1 + {y}') $
+			
+		Раскроем скобки, перегруппируем:	
+			
+		\subitem	
+			$ {y}' \cdot (1 - 2\sin{(x + y)}\cos{(x + y)}) = 2\sin{(x + y)}\cos{(x + y)} $
+			
+		Применим формулу двойного угла для $ 2\sin{(x + y)}\cos{(x + y)} $ 
+		в левой части уравнения и основное тригонометрическое тождество для косинуса 
+		в правой части уравнения:
+		
+		\subitem 
+			$ {y}' \cdot (1 - \sin{(2x + 2y)}) = 2\sin{(x + y)}\sqrt{1 - \sin^2{(x + y)}} $
+			
+		Заметим, что $ \sin^2(x + y) = {y} $, значит, $ \sin{(x+y)} = \sqrt{y} $
+		
+		Получили исходное уравнение:
+		
+		\subitem
+			$ \equation $
+			
+		\answer представленная неявная функция является решением данной задачи Коши
+\end{itemize}

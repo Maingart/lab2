@@ -14,25 +14,21 @@
 	\dfrac{2xy}{\sin{2x}} - y \cdot \ln{(y\ctg{x})}
 }
 
-\newcommand{\taskOneSolutionItem}[4]{
-	% #1 - номер уравнения %
-	% #2 - уравнение %
-	% #3 - тип уравнения %
-	% #4 - ответ %
+\newcommand{\taskOneSolutionItem}[4] {
 	\item 
-	$ #2 $
+		$ #2 $ 	% #2 - уравнение
 	
 	\textit{Тип уравнения}:
-	#3
+		#3 	% #3 - тип уравнения
 	
 	\textit{Векторное поле}:
 	\begin{figure}[H]
 		\centering
 		\includegraphics[width=0.5\textwidth]{img/dist/equation#1.pdf}
-		\caption{Уравнение #1}
+		\caption{Уравнение #1} 	% #1 - номер уравнения
 	\end{figure}
 	
-	\textit{Ответ}: $ \displaystyle #4,\ C \in \rational $
+	\answer $ \displaystyle #4,\ C \in \rational $ 	% #4 - ответ
 	
 	\newpage
 }

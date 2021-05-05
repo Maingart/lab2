@@ -5,12 +5,12 @@
 \def \constantFirst {\dfrac{3 e^{\frac{2}{3}}}{2}}
 
 % уравнение два
-\def \equationSecond {{y}' \cdot \ln{x} + 2xy = 2x \cdot \sqrt{y}}
+\def \equationSecond {{y}'\cos{x} + {y} = \dfrac{y}{\ln{y}}}
 \def \conditionSecond {y\paren{0} = 1}
-\newcommand{\solutionSecond}[1][C] {\ln{\sqrt{y} - 1} = #1 - \Ei{2\ln{x}}}
-\def \constantSecond {-1}
+\newcommand{\solutionSecond}[1][C] { {y} - y\ln{y} = \dfrac{#1\cos{x}}{\sin{x} + 1}}
+\def \constantSecond {1}
 
-\newcommand{\taskTwoSolutionItem}[5]{
+\newcommand{\taskTwoSolutionItem}[6]{
 	\item 
 		$ #1 $ % #1 - уравнение
 	
@@ -22,4 +22,10 @@
 	$ C = #4 $ % #4 - найденное С
 	
 	\answer $ \displaystyle #5 $ % #5 - ответ
+	
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.5\textwidth]{img/dist/cauchy#6.pdf}
+		\caption{Векторное поле частного решения уравнения #6} % #6 - номер уравнения
+	\end{figure}
 }
